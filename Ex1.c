@@ -8,10 +8,15 @@ int main(){
     while((x[i]= getchar()) != '\n'){
         i++;
     }
-    for(k = 0;k<i;k++){
-        if(x[k]>='A'&&x[k]<='Z');
+    for(k = 0;k<i;){
+        if((a[k]>='A'&&a[k]<='Z')||(a[k]>='a'&&a[k]<='z')){
+            k++;
+        }else{
+            amount++;
+            k++;
+        }
     }
-    printf("单词的个数: %d\n",amount);
+   printf("单词的个数: %d\n",amount);
     return 0;
 } 
 
