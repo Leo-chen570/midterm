@@ -9,7 +9,7 @@ int main(){
         i++;
     }
     for(k = 0;k<i;){
-        if((a[k]>='A'&&a[k]<='Z')||(a[k]>='a'&&a[k]<='z')){
+        if((x[k]>='A'&&x[k]<='Z')||(x[k]>='a'&&x[k]<='z')){
             k++;
         }else{
             amount++;
